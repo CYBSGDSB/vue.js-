@@ -37,7 +37,10 @@
             逆转信息
         </button>
     </div>
-
+    <div id="app-6">
+      <p>{{message}}</p>
+      <input type="text" v-model="message">
+    </div>
 
 
     <script>
@@ -79,6 +82,12 @@
                     this.message=this.message.split('').reverse().join('')
                 }
             }
+        })
+        var app6=new Vue({
+          el:'#app-6',
+          data:{
+            message:'Hello Vue!'
+          }
         })
     </script>
 </body>
